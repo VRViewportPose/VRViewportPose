@@ -16,13 +16,13 @@ We conducted an IRB-approved data collection of the viewport pose.
 
 ### A. Stimuli
 
-We collected the viewport pose for desktop, headset, and phone-based VRs, with open-source VR games from Unity store, containing 1 indoor (Office [1]) and 2 outdoor (Viking village [2], Lite [3]) scenarios. Main characteristics of these VR games with different scene complexities. In desktop VR, rotational and translational movements are made using the mouse and up arrow key. The poses in headset VR are collected with a standalone Oculus Quest 2, where rotational and translational movements are made by moving the head and by using the controller thumbstick. In the phone-based VR, in-lab experiment uses Pixel 2 XL with Android 9, and rotational and translational movements are made by moving the motion-sensor-equipped phone and by tapping on the screen using one finger.
+We collected the viewport pose for desktop, headset, and phone-based VRs, with open-source VR games from Unity store, containing 1 indoor (Office [1]) and 2 outdoor (Viking Village [2], Lite [3]) scenarios. Main characteristics of these VR games with different scene complexities. In desktop VR, rotational and translational movements are made using the mouse and up arrow key. The poses in headset VR are collected with a standalone Oculus Quest 2, where rotational and translational movements are made by moving the head and by using the controller thumbstick. In the phone-based VR, in-lab experiment uses Pixel 2 XL with Android 9, and rotational and translational movements are made by moving the motion-sensor-equipped phone and by tapping on the screen using one finger.
 
 <p align="center">
      <img src="https://github.com/VRViewportPose/VRViewportPose/blob/main/Stimuli.png" width = "800" height = "250" hspace="0"/>
 </p>
 <p align="center">
-Figure 1: Open-source VR games used for the data collection: (a) Office; (b) Viking village; (c) Lite.
+Figure 1: Open-source VR games used for the data collection: (a) Office; (b) Viking Village; (c) Lite.
 </p>
 
 ### B. Procedure
@@ -31,11 +31,11 @@ The data collection, conducted under COVID-19 restrictions, involved unaided and
 
 ## 2. <span id="2">Download the Dataset</span>
 
-The dataset samples can be download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/VR_Pose_Sample.zip). 
+The dataset can be download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/VR_Pose_Dataset.zip). 
 
 ### A. The structure of the complete dataset
 
-The complete dataset follows a hierarchical file structure shown below:
+The dataset follows a hierarchical file structure shown below:
 ```
 VR_Pose
 └───data_Desktop
@@ -62,31 +62,6 @@ VR_Pose
 ...
 ```
 There are **3** sub-folders corresponding to the different VR interfaces. In the subfolder of data_Desktop, there are **60** TXT files, corresponding to **20** participants, each of them experiencing **3** VR games. There are **15** TXT files in both the data_Oculus and data_Phone subfolders, corresponding to **5** participants experiencing **3** VR games. In total, there are over **5.5 hours** of user data.
-
-### B. The structure of current dataset samples
-The current dataset samples follow a hierarchical file structure shown below:
-```
-VR_Pose
-└───data_Desktop
-│   │
-│   └───Office_Desktop_1.txt
-│   └───VikingVillage_Desktop_1.txt
-│   └───Lite_Desktop_1.txt
-│
-└───data_Oculus
-│   │
-│   └───Office_Oculus_1.txt
-│   └───VikingVillage_Oculus_1.txt
-│   └───Lite_Oculus_1.txt
-|
-└───data_Phone
-│   │
-│   └───Office_Oculus_1.txt
-│   └───VikingVillage_Oculus_1.txt
-│   └───Lite_Oculus_1.txt
-```
-
-There are also **3** sub-folders corresponding to the different VR interfaces. In each subfolder, there are only **3** TXT files, corresponding to **1** participant experienceing **3** VR games. ***The full dataset will be published upon the publication of the manuscript.***
 
 ## 3. <span id="3">Extract the Orientation and Position Models</span>
 
@@ -132,17 +107,16 @@ The position model script is provided via https://github.com/VRViewportPose/VRVi
 
 # II. <span id="5"> Visibility Similarity </span>
 
-The codes for analyzing dataset samples can be download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/ViS_Analysis.zip).
+The codes for analyzing the visibility similarity can be download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/ViS_Analysis.zip).
 
 1. You will see three files after extracting the ZIP file. `Analysis_Visibility_Similarity.m` sets the parameters for the orientation model, position model, and the visibility similarity model, and calculates the analytical results  of visibility similarity. `calculate_m_k.m` calculates the *k*-th moment of the position displacement, and `calculate_hypergeom.m` is used to calculate the hypergeometric function.
 2. Run the `Analysis_Visibility_Similarity.m`. You can get the analytical results of visibility similarity.
 
-***The full simulation and implementation codebase will be publicly available upon the publication of the manuscript.***
 
 # References
 [1] Unity Asset Store. (2020) Office. https://assetstore.unity.com/packages/3d/environments/snapsprototype-office-137490
 
-[2] Unity Technologies. (2015) Viking village. https://assetstore.unity.com/packages/essentials/tutorialprojects/viking-village-29140
+[2] Unity Technologies. (2015) Viking Village. https://assetstore.unity.com/packages/essentials/tutorialprojects/viking-village-29140
 
 [3] Xiaolianhua Studio. (2017) Lite. https://assetstore.unity.com/packages/3d/environments/fantasy/makeyour-fantasy-game-lite-8312
 
