@@ -108,10 +108,10 @@ The position model script is provided via https://github.com/VRViewportPose/VRVi
 # II. <span id="5"> Visibility Similarity </span>
 
 
-* [4. Analyzing Results](#6)
+* [4. Analytical Results](#6)
 * [5. Simulation Results](#7)
 
-## 4. <span id="6"> Analyzing Results </span> 
+## 4. <span id="6"> Analytical Results </span> 
 
 The codes for analyzing the visibility similarity can be download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/ViS_Analysis.zip).
 
