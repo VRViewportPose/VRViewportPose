@@ -133,17 +133,22 @@ The codes for simulating the visibility similarity can be download [**here**](ht
 
 The codes for implementing the ALG-ViS can be downloaded here. Tested with Unity 2019.2.14f1 and Oculus Quest 2 with build 30.0.
 
-i. In Unity Hub, create a new 3D Unity project. Download .zip file and unzip in the "Assets" folder of the Unity project.
+a. In Unity Hub, create a new 3D Unity project. Download .zip file and unzip in the "Assets" folder of the Unity project.
 
-ii. Install Android 9.0 'Pie' (API Level 28) or higher installed using the SDK Manager in [Android Studio](https://developer.android.com/studio). 
+b. Install Android 9.0 'Pie' (API Level 28) or higher installed using the SDK Manager in [Android Studio](https://developer.android.com/studio). 
 
-iii. Navigate to File>Build Settings>Player Settings. Set 'Minimum API Level' to be Android 9.0 'Pie' (API Level 28) or higher. In 'Other Settings', make sure only 'OpenGLES3' is selected. In 'XR Settings', check 'Virtual Reality Selected' and add 'Oculus' to the 'Virtual Reality SDKs'. Rename your 'CompanyName' and 'GameName', and the Bundle Identifier string com.CompanyName.GameName will be the unique name of your application installed on the Oculus device. 
+c. Navigate to File>Build Settings>Player Settings. Set 'Minimum API Level' to be Android 9.0 'Pie' (API Level 28) or higher. In 'Other Settings', make sure only 'OpenGLES3' is selected. In 'XR Settings', check 'Virtual Reality Selected' and add 'Oculus' to the 'Virtual Reality SDKs'. Rename your 'CompanyName' and 'GameName', and the Bundle Identifier string com.CompanyName.GameName will be the unique package name of your application installed on the Oculus device. 
 
-iv. Navigate to Window>Asset Store. Search for the virtual reality game (e.g., the 'Make Your Fantasy Game - Lite' game) in the Asset Store, and select 'Buy Now'
+d. Copy the "pose.txt" and "visValue.txt" to the Application.persistentDataPath which points to /storage/emulated/0/Android/data/\<packagename\>/files, where \<packagename\> is com.CompanyName.GameName.
+     
+e. Navigate to Window>Asset Store. Search for the virtual reality game (e.g., the 'Make Your Fantasy Game - Lite' game [3]) in the Asset Store, and select 'Buy Now'
 and 'Import'.
 
-v. Make sure only the 'ALG_ViS' scene is selected in 'Scenes in Build'. Select your connected target device (Oculus Quest 2) and click 'Build and Run'.
+f. Make sure only the 'ALG_ViS' scene is selected in 'Scenes in Build'. Select your connected target device (Oculus Quest 2) and click 'Build and Run'.
 
+g. The output APK package will be saved to the file path you specify, while the app will be installed on the Oculus Quest 2 device connected to your computer.
+
+h. Disconnect the Oculus Quest 2 from the computer. After setting up a new Guardian Boundary, the vritual reality game with ALG-ViS will be automatically loaded.
 
 # References
 [1] Unity Asset Store. (2020) Office. https://assetstore.unity.com/packages/3d/environments/snapsprototype-office-137490
