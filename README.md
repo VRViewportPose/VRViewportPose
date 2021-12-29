@@ -1,3 +1,5 @@
+This repository contains the introduction to the collected ***VRViewportPose dataset*** and the code for the **IEEE INFOCOM 2022** paper: *"VR} Viewport Pose Model for Quantifying and Exploiting Frame Correlations"* by [Ying Chen](https://sites.duke.edu/marialabyingchen/), [Hojung Kwon](https://www.linkedin.com/in/ashley-hojung-kwon), [Hazer Inaltekin](https://scholar.google.com.tr/citations?user=yBRPzisAAAAJ&hl=en), and [Maria Gorlatova](https://maria.gorlatova.com/). 
+
 # Outline
 
 * [I. VR Viewport Pose Dataset](#4)
