@@ -33,7 +33,7 @@ The data collection, conducted under COVID-19 restrictions, involved unaided and
 
 The dataset can be download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/VR_Pose_Dataset.zip). 
 
-### A. The structure of the complete dataset
+### A. The structure of the dataset
 
 The dataset follows a hierarchical file structure shown below:
 ```
