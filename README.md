@@ -35,7 +35,7 @@ The dataset can be download [**here**](https://github.com/VRViewportPose/VRViewp
 
 ### A. The structure of the dataset
 
-The dataset follows a hierarchical file structure shown below:
+The dataset follows the hierarchical file structure shown below:
 ```
 VR_Pose
 └───data_Desktop
