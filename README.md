@@ -165,9 +165,7 @@ Please cite the following paper in your publications if the dataset or code help
     
 # Acknowledgments
 
-We thank the study's participants for their time in the data collection. This study was done in the [Intelligent Interactive Internet of Things Lab](https://maria.gorlatova.com/) at [Duke University](https://www.duke.edu/), and was approved by our institution's Institutional Review Board.  
-
-The contributors of the dataset and code are [Ying Chen](https://sites.duke.edu/marialabyingchen/) and [Maria Gorlatova](https://maria.gorlatova.com/). For questions on this repository or the related paper, please contact Ying Chen at yc383 [AT] duke [DOT] edu.
+We thank the study's participants for their time in the data collection. The contributors of the dataset and code are [Ying Chen](https://sites.duke.edu/marialabyingchen/) and [Maria Gorlatova](https://maria.gorlatova.com/). For questions on this repository or the related paper, please contact Ying Chen at yc383 [AT] duke [DOT] edu.
 
 # References
 [1] Unity Asset Store. (2020) Office. https://assetstore.unity.com/packages/3d/environments/snapsprototype-office-137490
