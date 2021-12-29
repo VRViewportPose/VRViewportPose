@@ -152,13 +152,13 @@ h. Disconnect the Oculus Quest 2 from the computer. After setting up a new Guard
 
 # Citation
 
-Please cite the following paper in your publications if the code helps your research. 
+Please cite the following paper in your publications if the dataset or code helps your research. 
 
-     @inproceedings{Liu20CollabAR,
-      title={{CollabAR}: Edge-assisted collaborative image recognition for mobile augmented reality },
-      author={Liu, Zida and Lan, Guohao and Stojkovic, Jovan and Yunfan, Zhang and Joe-Wong, Carlee and Gorlatova, Maria},
-      booktitle={Proceedings of the 19th ACM/IEEE Conference on Information Processing in Sensor Networks},
-      year={2020}
+     @inproceedings{Chen22VRViewportPose,
+      title={{VR} Viewport Pose Model for Quantifying and Exploiting Frame Correlations},
+      author={Chen, Ying and Kwon, Hojung and Inaltekin, Hazer and Gorlatova, Maria},
+      booktitle={Proc. IEEE INFOCOM},
+      year={2022}
     }
     
 # Acknowledgments
