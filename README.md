@@ -12,7 +12,8 @@
 
 ## 1. <span id="1"> Data Collection </span> 
 
-We conducted an IRB-approved data collection of the viewport pose.
+We conducted an IRB-approved data collection of the viewport pose in 3 VR games and across 3 different types of VR user interfaces, with over 5.5 hours of user data in
+total.
 
 ### A. Stimuli
 
