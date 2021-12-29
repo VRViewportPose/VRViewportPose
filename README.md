@@ -2,10 +2,10 @@ This repository contains the introduction to the collected ***VRViewportPose dat
 
 # Outline
 
-* [I. VR Viewport Pose Dataset](#4)
+* [I. VRViewportPose Dataset](#4)
 * [II. Visibility Similarity](#5)
 
-# I. <span id="4"> VR Viewport Pose Dataset </span> 
+# I. <span id="4"> VRViewportPose Dataset </span> 
 
 * [1. Data Collection](#1)
 * [2. Download the Dataset](#2)
