@@ -16,7 +16,7 @@ We conducted an IRB-approved data collection of the viewport pose.
 
 ### A. Stimuli
 
-We collected the viewport pose for desktop, headset, and phone-based virtual reality (VR), with open-source VR games with different scene complexities from Unity store, containing 1 indoor (Office [1]) and 2 outdoor (Viking Village [2], Lite [3]) scenarios. In desktop VR, rotational and translational movements are made using the mouse and up arrow key. The poses in headset VR are collected with a standalone Oculus Quest 2, where rotational and translational movements are made by moving the head and by using the controller thumbstick. In the phone-based VR, in-lab experiment uses Pixel 2 XL with Android 9, and rotational and translational movements are made by moving the motion-sensor-equipped phone and by tapping on the screen using one finger.
+We collected the viewport pose for desktop, headset, and phone-based virtual reality (VR), with open-source VR games with different scene complexities from Unity store, containing 1 indoor (Office [1]) and 2 outdoor (Viking Village [2], Lite [3]) scenarios. In desktop VR, rotational and translational movements are made using the mouse and up arrow key. The poses in the headset VR are collected with a standalone Oculus Quest 2, where rotational and translational movements are made by moving the head and by using the controller thumbstick. The poses in the phone-based VR are collected with Google Pixel 2 XL with Android 9, and rotational and translational movements are made by moving the motion-sensor-equipped phone and by tapping on the screen using one finger.
 
 <p align="center">
      <img src="https://github.com/VRViewportPose/VRViewportPose/blob/main/Stimuli.png" width = "800" height = "250" hspace="0"/>
