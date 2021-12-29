@@ -1,3 +1,23 @@
+$\begin{array}{l}
+{\bf{n}} = {\bf{R}}\left[ {\begin{array}{*{20}{l}}
+0\\
+0\\
+1
+\end{array}} \right] = \left[ {\begin{array}{*{20}{c}}
+{\cos \alpha \cos \gamma  - \sin \alpha \sin \beta \sin \gamma }&{ - \sin \alpha \cos \beta }&{\cos \alpha \sin \gamma  + \sin \alpha \sin \beta \cos \gamma }\\
+{\sin \alpha \cos \gamma  + \cos \alpha \sin \beta \sin \gamma }&{\cos \alpha \cos \beta }&{\sin \alpha \sin \gamma  - \cos \alpha \sin \beta \cos \gamma }\\
+{ - \cos \beta \sin \gamma }&{\sin \beta }&{\cos \beta \cos \gamma }
+\end{array}} \right]\left[ {\begin{array}{*{20}{l}}
+0\\
+0\\
+1
+\end{array}} \right]\\
+ = \left[ {\begin{array}{*{20}{c}}
+{\cos \alpha \sin \gamma  + \sin \alpha \sin \beta \cos \gamma }\\
+{\sin \alpha \sin \gamma  - \cos \alpha \sin \beta \cos \gamma }\\
+{\cos \beta \cos \gamma }
+\end{array}} \right]
+\end{array}$
 # Outline
 
 * [I. VR Viewport Pose Dataset](#4)
