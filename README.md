@@ -141,7 +141,7 @@ c. Create empty "depth", "texture", and "IRB" subfolders inside the "Assets" fol
 
 The codes for implementing the ALG-ViS can be downloaded [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/ALGViS.zip). Tested with Unity 2019.2.14f1 and Oculus Quest 2 with build 30.0.
 
-a. In Unity Hub, create a new 3D Unity project. Download .zip file and unzip in the "Assets" folder of the Unity project.
+a. In Unity Hub, create a new 3D Unity project. Download ZIP file and unzip in the "Assets" folder of the Unity project.
 
 b. Install Android 9.0 'Pie' (API Level 28) or higher installed using the SDK Manager in [Android Studio](https://developer.android.com/studio). 
 
