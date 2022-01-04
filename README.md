@@ -88,9 +88,12 @@ After we obtain the polar and azimuth angles, we fit the polar angle, polar angl
 The orientaion model script is provided via https://github.com/VRViewportPose/VRViewportPose/blob/main/OrientationModel.py. To obtain the orientation model, follow the procedure below:
 
 a. Download and extract the VR viewport pose dataset.
+     
 b. Change the `filePath` variable in `OrientationModel.py` to the file location of the pose dataset.
+     
 c. You can directly run `OrientationModel.py` (`python .\OrientationModel.py`). It will automatically run the pipeline.
-d. The generated EPS images named "*polar_fit_our_dataset.eps*", "*polar_change.eps*", "*azimuth_change.eps*", and "ACF_our_dataset.eps" will be saved in a folder. "*polar_fit_our_dataset.eps*", "*polar_change.eps*", and "*azimuth_change.eps*" show the distribution of the experimental data for polar angle, polar angle change, and azimuth angle change fitted by different statistical distributions, respectively. "*ACF_our_dataset.eps*" shows the autocorrelation function (ACF) of polar and azimuth angle samples that are <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;t" title="\Delta t" /></a> s apart.
+     
+d. The generated EPS images named "*polar_fit_our_dataset.eps*", "*polar_change.eps*", "*azimuth_change.eps*", and "ACF_our_dataset.eps" will be saved in a folder. "*polar_fit_our_dataset.eps*", "*polar_change.eps*", and "*azimuth_change.eps*" show the distribution of the experimental data for polar angle, polar angle change, and azimuth angle change fitted by different statistical distributions, respectively. "*ACF_our_dataset.eps*" shows the autocorrelation function (ACF) of polar and azimuth angle samples that are *Δt* s apart.
 
 ### B. Position model
 #### Data processing
@@ -103,8 +106,11 @@ We apply the standard angle model proposed in [5] to extract flights from the tr
 The position model script is provided via https://github.com/VRViewportPose/VRViewportPose/blob/main/PositionModel.py. To obtain the position model, follow the procedure below:
 
 a. Download and extract the VR viewport pose dataset.
+     
 b. Change the `filePath` variable in `PositionModel.py` to the file location of the pose dataset.
+     
 c. You can directly run `PositionModel.py` (`python .\PositionModel.py`). It will automatically run the pipeline.
+     
 d. The generated EPS images named "*flight_sample.eps*", "*flight.eps*", "*pausetime_distribution.eps*", and "*correlation.eps*" will be saved in a folder. "*flight_sample.eps*" shows an example of the collected trajectories and the corresponding flights. "*flight.eps*" and "*pausetime_distribution.eps*" show distributions of the flight time and the pause duration for collected samples, respectively. "*correlation.eps*" shows the correlation of the azimuth angle and the walking direction.
 
 # II. <span id="5"> Visibility Similarity </span>
@@ -127,7 +133,7 @@ The codes for simulating the visibility similarity can be download [**here**](ht
 
 a. Open existing Unity projects [1]-[3]. Navigate to File>Build Settings, select "PC,MAC & Linux Standalone" build. Navigate to "Game" window, and set the resolution to 2160\*2160. Locate the main camera, and set the field of view to 130.
 
-b. Extract the ZIP file to the "Assets" folder of the Unity projects. You will see five files after extracting the ZIP file. `NovelReferencePair.txt` is the randomly sampled pairs of viewport poses from the collected pose trajectories for reference and novel cameras (when <img src="https://latex.codecogs.com/svg.image?\Delta&space;t=1/6" title="\Delta t=1/6" /> s). `RenderDepth.shader` is a shader script to get a depth map, a greyscale image of the scene where the brightness of each pixel indicates how far it is from the camera. `DepthCamera.cs` is used to render the depth map of the scene with the shader. `TextureCamera.cs` is used to render the pristine frames (frames without post-processing) rendered by Unity. `IRBCamera.cs` is used to obtain generated novel frame by view projection from the reference frame and its depth map.
+b. Extract the ZIP file to the "Assets" folder of the Unity projects. You will see five files after extracting the ZIP file. `NovelReferencePair.txt` is the randomly sampled pairs of viewport poses from the collected pose trajectories for reference and novel cameras (when *Δt*=1/6 s). `RenderDepth.shader` is a shader script to get a depth map, a greyscale image of the scene where the brightness of each pixel indicates how far it is from the camera. `DepthCamera.cs` is used to render the depth map of the scene with the shader. `TextureCamera.cs` is used to render the pristine frames (frames without post-processing) rendered by Unity. `IRBCamera.cs` is used to obtain generated novel frame by view projection from the reference frame and its depth map.
 
 c. Create empty "depth", "texture", and "IRB" subfolders inside the "Assets" folder. Attach `DepthCamera.cs` to the main camera and click play button to run the Unity project. You will get the depth maps in folder "Assets\depth". Remove `DepthCamera.cs` from the main camera and attach `TextureCamera.cs` to the main camera. After clicking the play button, you will get the pristine frames in folder "Assets\texture". Remove `TextureCamera.cs` from the main camera and attach `IRBCamera.cs` to the main camera. After clicking the play button to run the project, you will get the generated novel frames in folder "Assets\IRB". 
 
