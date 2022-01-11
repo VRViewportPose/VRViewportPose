@@ -117,8 +117,7 @@ d. The generated EPS images named "*flight_sample.eps*", "*flight.eps*", "*pause
 
 
 * [4. Analytical Results](#6)
-* [5. Simulation Results](#7)
-* [6. Implementation of ALG-ViS](#8)
+* [5. Implementation of ALG-ViS](#8)
 
 ## 4. <span id="6"> Analytical Results </span> 
 
@@ -127,17 +126,8 @@ The codes for analyzing the visibility similarity can be download [**here**](htt
 a. You will see three files after extracting the ZIP file. `Analysis_Visibility_Similarity.m` sets the parameters for the orientation model, position model, and the visibility similarity model, and calculates the analytical results  of visibility similarity. `calculate_m_k.m` calculates the *k*-th moment of the position displacement, and `calculate_hypergeom.m` is used to calculate the hypergeometric function.
 b. Run the `Analysis_Visibility_Similarity.m`. You can get the analytical results of visibility similarity.
 
-## 5. <span id="7"> Simulation Results </span> 
 
-The codes for simulating the visibility similarity can be download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/ViS_Simulation.zip). Tested with Unity 2019.2.14f1.
-
-a. Open existing Unity projects [1]-[3]. Navigate to File>Build Settings, select "PC,MAC & Linux Standalone" build. Navigate to "Game" window, and set the resolution to 2160\*2160. Locate the main camera, and set the field of view to 130.
-
-b. Extract the ZIP file to the "Assets" folder of the Unity projects. You will see five files after extracting the ZIP file. `NovelReferencePair.txt` is the randomly sampled pairs of viewport poses from the collected pose trajectories for reference and novel cameras (when *Δt*=1/6 s). `RenderDepth.shader` is a shader script to get a depth map, a greyscale image of the scene where the brightness of each pixel indicates how far it is from the camera. `DepthCamera.cs` is used to render the depth map of the scene with the shader. `TextureCamera.cs` is used to render the pristine frames (frames without post-processing) rendered by Unity. `IRBCamera.cs` is used to obtain generated novel frame by view projection from the reference frame and its depth map.
-
-c. Create empty "depth", "texture", and "IRB" subfolders inside the "Assets" folder. Attach `DepthCamera.cs` to the main camera and click play button to run the Unity project. You will get the depth maps in folder "Assets\depth". Remove `DepthCamera.cs` from the main camera and attach `TextureCamera.cs` to the main camera. After clicking the play button, you will get the pristine frames in folder "Assets\texture". Remove `TextureCamera.cs` from the main camera and attach `IRBCamera.cs` to the main camera. After clicking the play button to run the project, you will get the generated novel frames in folder "Assets\IRB". 
-
-## 6. <span id="8"> Implementation of ALG-ViS </span> 
+## 5. <span id="8"> Implementation of ALG-ViS </span> 
 
 The codes for implementing the ALG-ViS can be downloaded [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/ALGViS.zip). Tested with Unity 2019.2.14f1 and Oculus Quest 2 with build 30.0.
 
