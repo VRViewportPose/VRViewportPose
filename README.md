@@ -131,9 +131,9 @@ b. Run the `Analysis_Visibility_Similarity.m`. You can get the analytical result
 
 The codes for implementing the ALG-ViS can be downloaded [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/ALGViS.zip). Tested with Unity 2019.2.14f1 and Oculus Quest 2 with build 30.0.
 
-a. In Unity Hub, create a new 3D Unity project. Download ZIP file and unzip in the "Assets" folder of the Unity project. Then drag all Prefabs from the Project window to the Hierarchy window. In the Hierarchy Window, attach `Vis.cs` to the "g" game object. In the script, assign "matViS" material to the "Mat" variable, and assign prefabs to the corresponding variables. For "g1"--"g11" game objects, assign `UVPoseProcessing.cs` to their camers, and assign "matViS" material to the "Mat" variables.
+a. In Unity Hub, create a new 3D Unity project. Download ZIP file and unzip in the "Assets" folder of the Unity project. Then drag all Prefabs from the Project window to the Hierarchy window. In the Hierarchy Window, attach `Vis.cs` to the "g" game object. In the script, assign "matViS" material to the "Mat" variable, and assign prefabs to the corresponding variables. For "g1"-"g11" game objects, assign `UVPoseProcessing.cs` to their camers, and assign "matViS" material to the "Mat" variables.
 
-b. In the Inspector window, add User Layers 8--20 named as "C0", “C1”, ..., "C11", and "Fore", respectively.
+b. In the Inspector window, add User Layers 8-20 named as "C0", “C1”, ..., "C11", and "Fore", respectively.
      
 c. Install Android 9.0 'Pie' (API Level 28) or higher installed using the SDK Manager in [Android Studio](https://developer.android.com/studio). 
 
