@@ -113,8 +113,8 @@ c. You can directly run `PositionModel.py` (`python .\PositionModel.py`). It wil
      
 d. The generated EPS images named "*flight_sample.eps*", "*flight.eps*", "*pausetime_distribution.eps*", and "*correlation.eps*" will be saved in a folder. "*flight_sample.eps*" shows an example of the collected trajectories and the corresponding flights. "*flight.eps*" and "*pausetime_distribution.eps*" show distributions of the flight time and the pause duration for collected samples, respectively. "*correlation.eps*" shows the correlation of the azimuth angle and the walking direction.
 
-## 4. <span id="3">Viewport Pose Prediction in the Baseline ALG-ML</span>
-The baseline ALG-ML is a prediction-based method to reuse the pixels. In ALG-ML, we adopt an online ridge regression model, we predict the position *x*, *y*, *z*, and the orientation *θ* *ϕ* separately. The code for predicting the viewport poses in ALG-ML can be found download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/Viewport_Pose_Prediction.py).
+## 4. <span id="3">Viewport Pose Prediction</span>
+The baseline ALG-ML is a prediction-based method to reuse the pixels. In ALG-ML, we adopt an online ridge regression model, we predict the position *x*, *y*, *z*, and the orientation *θ*, *ϕ* separately. The code for predicting the viewport poses in ALG-ML can be found download [**here**](https://github.com/VRViewportPose/VRViewportPose/blob/main/Viewport_Pose_Prediction.py).
 
 # II. <span id="5"> Visibility Similarity </span>
 
